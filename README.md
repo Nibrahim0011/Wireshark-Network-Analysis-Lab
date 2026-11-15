@@ -1,5 +1,8 @@
 # Lab 02 — Wireshark & Network Analysis
 
+> 🎥 **Loom Walkthrough:** (https://www.loom.com/share/60cadc7d66594bbfaccc9149fa7dc6ba))
+
+
 **Hands-on network traffic analysis using Wireshark and Windows PowerShell**
 
 **Tools:** Wireshark, Npcap, Windows PowerShell  
@@ -94,6 +97,4 @@ Selected a TLS application-data packet and used **Follow → TCP Stream** to ins
 - Local HTTP test credentials were visible in packet data; TLS application data was not readable as plaintext.
 - Following a TCP stream can group exchanged bytes by conversation, but it does not decrypt HTTPS automatically.
 
-## Portfolio Notes
-
-This repository includes **screenshots** demonstrating the lab. `.pcapng` files are intentionally not included unless separately reviewed for personal data, tokens, device identifiers, or unrelated network traffic.
+  
