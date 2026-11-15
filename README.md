@@ -1,6 +1,6 @@
 # Lab 02 — Wireshark & Network Analysis
 
-> 🎥 **Loom Walkthrough:** (https://www.loom.com/share/60cadc7d66594bbfaccc9149fa7dc6ba))
+> 🎥 **Loom Walkthrough:** (https://www.loom.com/share/60cadc7d66594bbfaccc9149fa7dc6ba)
 
 
 **Hands-on network traffic analysis using Wireshark and Windows PowerShell**
