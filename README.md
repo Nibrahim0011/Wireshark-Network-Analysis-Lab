@@ -97,7 +97,3 @@ Selected a TLS application-data packet and used **Follow → TCP Stream** to ins
 ## Portfolio Notes
 
 This repository includes **screenshots** demonstrating the lab. `.pcapng` files are intentionally not included unless separately reviewed for personal data, tokens, device identifiers, or unrelated network traffic.
-
-## Video
-
-🎥 [Loom demonstration — add link](YOUR_LOOM_LINK_HERE)
