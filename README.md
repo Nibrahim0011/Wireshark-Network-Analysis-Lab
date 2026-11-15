@@ -46,7 +46,8 @@ http.request.method == "POST"
 tcp.len > 0
 ```
 
-![SYN filter](screenshots/03-TCP-SYN-Filter.png)
+<img width="2048" height="805" alt="03-TCP-SYN-Filter" src="https://github.com/user-attachments/assets/8893f6c2-a130-4861-bd5f-675094541294" />
+
 
 ### 3. TCP three-way handshake
 
@@ -65,16 +66,16 @@ The capture shows the full handshake:
 | #339 | Local host → remote server | ACK | Client confirms |
 
 The subsequent packets include a TLS 1.3 Client Hello and Server Hello. **This server is not identified as Yahoo; it is a separate captured connection.**
+<img width="2048" height="1059" alt="04-TCP-Three-Way-Handshake" src="https://github.com/user-attachments/assets/6894597d-0648-4653-b420-727915970b23" />
 
-![TCP handshake](screenshots/04-TCP-Three-Way-Handshake.png)
 
 ### 4. HTTP plaintext data demonstration
 
 Created a temporary **local** HTTP listener in PowerShell and submitted **dummy** test credentials over `127.0.0.1:8080`. The PowerShell output and Wireshark capture showed that form data sent over plain HTTP can be read without TLS encryption. The test server returned HTTP `200 OK`.
 
-![Local HTTP listener](screenshots/05-HTTP-Test-Server.png)
+<img width="748" height="334" alt="05-HTTP-Test-Server" src="https://github.com/user-attachments/assets/7e6eae73-b45e-4258-99e3-0228d5e0eeb8" />
 
-![HTTP cleartext POST](screenshots/06-HTTP-Cleartext-POST.png)
+<img width="2048" height="1110" alt="06-HTTP-Cleartext-POST" src="https://github.com/user-attachments/assets/97819b26-35c3-4ed5-86fb-3846e87eeceb" />
 
 **Security lesson:** HTTP does not provide transport encryption; HTTPS adds TLS to protect application contents in transit. Only test with invented credentials and authorized endpoints.
 
@@ -82,7 +83,8 @@ Created a temporary **local** HTTP listener in PowerShell and submitted **dummy*
 
 Selected a TLS application-data packet and used **Follow → TCP Stream** to inspect the two directions of a connection. The stream display showed non-readable bytes, consistent with encrypted traffic. This demonstrates stream following and the visibility difference between plaintext HTTP and TLS-protected communication; **a readable HTTP request-and-response stream was not captured in this exercise**.
 
-![TCP stream](screenshots/07-TCP-Stream-Analysis.png)
+<img width="2048" height="1248" alt="07-TCP-Stream-Analysis" src="https://github.com/user-attachments/assets/f1328f0f-55e7-45b1-8049-f7e7d335c5a1" />
+
 
 ## Key Takeaways
 
