@@ -28,13 +28,13 @@ PowerShell test client ── 127.0.0.1:8080 ── Local HTTP listener
 
 Ran `nslookup yahoo.com` in PowerShell and inspected the returned IPv4/IPv6 addresses. The configured DNS resolver was `192.168.1.1`.
 
-![DNS lookup](screenshots/01-DNS-Lookup.png)
+<img width="490" height="374" alt="01-DNS-Lookup" src="https://github.com/user-attachments/assets/d052b89a-d835-47d7-a554-6032327e87cd" />
 
 ### 2. Capture and filter network traffic
 
 Captured live traffic over Wi-Fi and used Wireshark display filters to narrow down traffic by protocol, TCP flags, port, and address.
 
-![Live capture](screenshots/02-Live-Packet-Capture.png)
+<img width="2048" height="998" alt="02-Live-Packet-Capture" src="https://github.com/user-attachments/assets/0b3c9756-fc35-4186-bb77-8f49072dd180" />
 
 Useful filters:
 
